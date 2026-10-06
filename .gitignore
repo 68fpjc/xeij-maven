@@ -1,1 +1,6 @@
 *
+!.gitignore
+!.gitattributes
+!pom.xml
+!README.md
+!build.sh

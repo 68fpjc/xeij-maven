@@ -5,7 +5,7 @@
 
   <groupId>xeij</groupId>
   <artifactId>xeij</artifactId>
-  <version>0.26.06.08</version>
+  <version>0.26.09.08</version>
   <packaging>jar</packaging>
 
   <name>XEiJ</name>
@@ -15,6 +15,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>26</maven.compiler.release>
     <main.class>xeij.XEiJ</main.class>
+    <xeij.dir>${project.basedir}/xeij</xeij.dir>
   </properties>
 
   <dependencies>
@@ -27,7 +28,7 @@
 
   <build>
     <finalName>XEiJ</finalName>
-    <sourceDirectory>${project.basedir}</sourceDirectory>
+    <sourceDirectory>${xeij.dir}</sourceDirectory>
 
     <pluginManagement>
       <plugins>
@@ -86,7 +87,7 @@
               <target>
                 <sync todir="${project.build.outputDirectory}/data"
                   overwrite="true">
-                  <fileset dir="${project.basedir}/data" />
+                  <fileset dir="${xeij.dir}/data" />
                 </sync>
               </target>
             </configuration>
@@ -155,7 +156,7 @@
                 </goals>
                 <configuration>
                   <target>
-                    <replace file="${project.basedir}/xeij/XEiJ.java"
+                    <replace file="${xeij.dir}/xeij/XEiJ.java"
                       token="&quot;../data/&quot;"
                       value="&quot;/data/&quot;" />
                   </target>
