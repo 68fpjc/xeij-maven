@@ -5,7 +5,7 @@
 
   <groupId>xeij</groupId>
   <artifactId>xeij</artifactId>
-  <version>0.26.10.08</version>
+  <version>0.26.11.08</version>
   <packaging>jar</packaging>
 
   <name>XEiJ</name>
@@ -13,7 +13,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>26</maven.compiler.release>
+    <maven.compiler.release>27</maven.compiler.release>
     <main.class>xeij.XEiJ</main.class>
     <xeij.dir>${project.basedir}/xeij</xeij.dir>
   </properties>
